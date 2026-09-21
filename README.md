@@ -11,3 +11,7 @@ Topik halaman saya: koleksi game yang pernah saya mainkan.
 - Isi tabel: judul game, platform, tahun bermain, rating
 - Isi form: tambah game
 - Gambar: koleksi game
+  
+#catatan penggunaan ai
+
+-saya menggunakan claude ai dan chatgpt untuk membantu saya dalam membuat tugas
