@@ -1,46 +1,126 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="id">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Koleksi Game Saya</title>
-</head>
+  </head>
 
-<body>
-
+  <body>
     <header>
-        <h1>Koleksi Game Saya</h1>
+      <h1>Koleksi Game Saya</h1>
 
-        <nav aria-label="Navigasi utama">
-            <ul>
-                <li><a href="#koleksi">Koleksi Game</a></li>
-                <li><a href="#tambah">Tambah Game</a></li>
-                <li><a href="#tentang">Tentang Saya</a></li>
-            </ul>
-        </nav>
+      <nav aria-label="Navigasi utama">
+        <ul>
+          <li><a href="#koleksi">Koleksi Game</a></li>
+          <li><a href="#tambah">Tambah Game</a></li>
+          <li><a href="#tentang">Tentang Saya</a></li>
+        </ul>
+      </nav>
     </header>
 
     <main>
+      <section id="koleksi">
+        <h2>Koleksi Game</h2>
 
-        <section id="koleksi">
-            <h2>Koleksi Game</h2>
+        <table>
+          <caption>
+            Daftar Game yang Pernah Saya Mainkan
+          </caption>
 
-            <!-- Tabel akan dibuat pada Lembar D -->
+          <thead>
+            <tr>
+              <th scope="col">Judul Game</th>
+              <th scope="col">Platform</th>
+              <th scope="col">Tahun Bermain</th>
+              <th scope="col">Rating</th>
+            </tr>
+          </thead>
 
-        </section>
+          <tbody>
+            <tr>
+              <th scope="row">Mobile Legends</th>
+              <td>HP</td>
+              <td>2022</td>
+              <td>8/10</td>
+            </tr>
 
-        <section id="tambah">
-            <h2>Tambah Game</h2>
+            <tr>
+              <th scope="row">Minecraft</th>
+              <td>HP</td>
+              <td>2021</td>
+              <td>9/10</td>
+            </tr>
 
-            <!-- Form akan dibuat pada Lembar E -->
+            <tr>
+              <th scope="row">Clash of Clans</th>
+              <td>HP</td>
+              <td>2023</td>
+              <td>9/10</td>
+            </tr>
+          </tbody>
+        </table>
 
-        </section>
+        <figure>
+          <img
+            src="game.jpg"
+            alt="Kumpulan game yang pernah saya mainkan di HP."
+            width="640"
+            height="360"
+            loading="lazy"
+          />
 
+          <figcaption>Koleksi game yang pernah saya mainkan di HP.</figcaption>
+        </figure>
+      </section>
+
+      <section id="tambah">
+        <h2>Tambah Game</h2>
+
+        <form action="#" method="post">
+          <p>
+            <label for="nama-game">Nama Game:</label>
+            <input type="text" id="nama-game" name="nama-game" required />
+          </p>
+
+          <p>
+            <label for="platform">Platform:</label>
+            <input type="text" id="platform" name="platform" required />
+          </p>
+
+          <p>
+            <label for="tahun">Tahun Bermain:</label>
+            <input
+              type="number"
+              id="tahun"
+              name="tahun"
+              min="2000"
+              max="2026"
+              required
+            />
+          </p>
+
+          <p>
+            <label for="rating">Rating:</label>
+            <input
+              type="number"
+              id="rating"
+              name="rating"
+              min="1"
+              max="10"
+              required
+            />
+          </p>
+
+          <p>
+            <button type="submit">Tambah Game</button>
+          </p>
+        </form>
+      </section>
     </main>
 
     <footer id="tentang">
-        <p>Sulthan Arya Kusuma · 25523130 · 2026</p>
+      <p>Sulthan Arya Kusuma · 25523130 · 2026</p>
     </footer>
-
-</body>
+  </body>
 </html>
