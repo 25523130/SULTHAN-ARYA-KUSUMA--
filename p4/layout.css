@@ -1,0 +1,139 @@
+/* ================= HEADER ================= */
+
+header {
+  padding-block: var(--space-4);
+  border-bottom: 1px solid var(--color-border);
+}
+
+/* Header menggunakan 3 kolom:
+   kiri  = tombol tema
+   tengah = judul
+   kanan = navigasi
+*/
+
+.header-baris {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--space-4);
+  flex-wrap: wrap;
+}
+
+/* ================= JUDUL ================= */
+
+.header-baris h1 {
+  margin: 0;
+  text-align: center;
+}
+
+/* ================= TOMBOL TEMA ================= */
+
+.tema-container {
+  justify-self: start;
+}
+
+/* ================= NAVIGASI ================= */
+
+.header-baris nav {
+  justify-self: end;
+}
+
+nav ul {
+  display: flex;
+  gap: var(--space-4);
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+nav a {
+  color: var(--color-primary);
+  text-decoration: none;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+/* ================= MAIN ================= */
+
+main {
+  display: flex;
+  flex-direction: column;
+  gap: var(--section-gap);
+  padding-block: var(--space-6);
+}
+
+/* ================= KATALOG GAME ================= */
+
+.katalog {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-4);
+}
+
+/* ================= KARTU GAME ================= */
+
+.kartu {
+  flex: 1 1 16rem;
+  background: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-md);
+  box-shadow: var(--shadow-1);
+  padding: var(--card-pad);
+}
+
+/* ================= FOOTER ================= */
+
+footer {
+  margin-top: var(--space-6);
+  padding-block: var(--space-4);
+  border-top: 1px solid var(--color-border);
+  color: var(--color-fg);
+  font-size: var(--text-sm);
+}
+
+/* ================= RESPONSIVE ================= */
+
+/* Untuk tablet dan HP */
+@media (max-width: 768px) {
+  .header-baris {
+    grid-template-columns: 1fr;
+    justify-items: center;
+  }
+
+  .tema-container {
+    justify-self: center;
+  }
+
+  .header-baris h1 {
+    order: -1;
+    text-align: center;
+  }
+
+  .header-baris nav {
+    justify-self: center;
+  }
+
+  nav ul {
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+}
+
+/* Untuk HP yang lebih kecil */
+@media (max-width: 480px) {
+  nav ul {
+    flex-direction: column;
+    align-items: center;
+    gap: var(--space-2);
+  }
+
+  .katalog {
+    flex-direction: column;
+  }
+
+  .kartu {
+    flex-basis: auto;
+  }
+}
