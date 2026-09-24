@@ -11,11 +11,10 @@ Topik halaman saya: koleksi game yang pernah saya mainkan.
 - Isi tabel: judul game, platform, tahun bermain, rating
 - Isi form: tambah game
 - Gambar: koleksi game
-  
+
 #catatan penggunaan ai
 
 -saya menggunakan claude ai dan chatgpt untuk membantu saya dalam membuat tugas
-
 
 ## Pertemuan 4 — Design token halaman profil
 
@@ -39,28 +38,30 @@ Saya memilih warna ini karena memberikan tampilan yang jelas dan sederhana pada 
 
 ### Design token yang saya tetapkan
 
-| Token | Nilai | Untuk apa |
-|---|---|---|
-| `--color-bg` | `#F5F7FA` | Latar halaman |
-| `--color-fg` | `#1F2937` | Warna teks utama |
-| `--color-surface` | `#FFFFFF` | Latar kartu dan panel |
-| `--color-border` | `#CBD5E1` | Garis pemisah dan tepi kotak |
-| `--color-primary` | `#2563EB` | Tombol, tautan, dan penanda |
-| `--color-danger` | `#B91C1C` | Peringatan dan isian yang tidak valid |
-| `--color-focus` | `#2563EB` | Garis fokus saat menggunakan keyboard |
-| `--space-1` | `0.25rem` | Jarak paling rapat |
-| `--space-2` | `0.5rem` | Jarak antar label dan isian |
-| `--space-3` | `0.75rem` | Jarak di dalam kartu |
-| `--space-4` | `1rem` | Jarak standar antar elemen |
-| `--space-6` | `1.5rem` | Jarak antar bagian halaman |
-| `--radius-md` | `0.5rem` | Sudut tombol, kartu, dan isian |
-| `--radius-full` | `999px` | Bentuk penuh seperti lencana |
-| `--shadow-1` | `0 1px 3px rgba(0,0,0,.10)` | Bayangan halus kartu |
-| `--text-sm` | `0.875rem` | Keterangan dan teks bantu |
-| `--text-md` | `1rem` | Teks isi |
-| `--text-xl` | `1.5rem` | Judul bagian |
-| `--text-3xl` | `2.25rem` | Judul halaman |
+| Token             | Nilai                       | Untuk apa                             |
+| ----------------- | --------------------------- | ------------------------------------- |
+| `--color-bg`      | `#F5F7FA`                   | Latar halaman                         |
+| `--color-fg`      | `#1F2937`                   | Warna teks utama                      |
+| `--color-surface` | `#FFFFFF`                   | Latar kartu dan panel                 |
+| `--color-border`  | `#CBD5E1`                   | Garis pemisah dan tepi kotak          |
+| `--color-primary` | `#2563EB`                   | Tombol, tautan, dan penanda           |
+| `--color-danger`  | `#B91C1C`                   | Peringatan dan isian yang tidak valid |
+| `--color-focus`   | `#2563EB`                   | Garis fokus saat menggunakan keyboard |
+| `--space-1`       | `0.25rem`                   | Jarak paling rapat                    |
+| `--space-2`       | `0.5rem`                    | Jarak antar label dan isian           |
+| `--space-3`       | `0.75rem`                   | Jarak di dalam kartu                  |
+| `--space-4`       | `1rem`                      | Jarak standar antar elemen            |
+| `--space-6`       | `1.5rem`                    | Jarak antar bagian halaman            |
+| `--radius-md`     | `0.5rem`                    | Sudut tombol, kartu, dan isian        |
+| `--radius-full`   | `999px`                     | Bentuk penuh seperti lencana          |
+| `--shadow-1`      | `0 1px 3px rgba(0,0,0,.10)` | Bayangan halus kartu                  |
+| `--text-sm`       | `0.875rem`                  | Keterangan dan teks bantu             |
+| `--text-md`       | `1rem`                      | Teks isi                              |
+| `--text-xl`       | `1.5rem`                    | Judul bagian                          |
+| `--text-3xl`      | `2.25rem`                   | Judul halaman                         |
 
 ### Kriteria selesai
 
 Kriteria selesai saya adalah mengubah warna utama halaman di satu baris pada `tokens.css`. Setelah perubahan tersebut, warna pada tombol, tautan, judul, dan garis fokus harus ikut berubah tanpa perlu mengubah CSS pada masing-masing komponen.
+
+saya menggunakan claude ai dan chatgpt untuk membantu saya dalam membuat tugas
