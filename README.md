@@ -141,3 +141,57 @@ Rubrik ini digunakan untuk melihat sejauh mana pekerjaan telah memenuhi kriteria
 ### Catatan Penggunaan AI
 
 Saya menggunakan Claude AI dan ChatGPT sebagai alat bantu untuk memahami JavaScript ES6+, fungsi, struktur data, array methods, dan debugging. Kode kemudian saya sesuaikan, jalankan, dan uji sendiri menggunakan VS Code, Live Server, dan browser.
+
+## Pertemuan 9 — DOM, Event, dan Interaktivitas
+
+### A. Tujuan Pembelajaran
+
+Pada pertemuan ini, saya mempelajari cara menggunakan JavaScript untuk memilih dan mengelola elemen HTML, menampilkan data secara dinamis, menangani event, serta melakukan validasi form. Saya juga mempelajari cara memisahkan kode JavaScript ke dalam beberapa berkas agar lebih terstruktur dan mudah dipelihara.
+
+### B. Pemilihan Elemen DOM
+
+Saya menggunakan `document.querySelector()` untuk mengambil elemen HTML berdasarkan ID, seperti `#daftar`, `#kosong`, dan `#filter`. Elemen yang sudah dipilih disimpan dalam variabel agar dapat digunakan kembali di dalam kode JavaScript.
+
+### C. Render Data Proyek
+
+Daftar proyek ditampilkan berdasarkan array `daftarProyek` yang berada di `js/app.js` dan diimpor ke `js/dom.js`.
+
+Saya menggunakan beberapa metode DOM, yaitu:
+
+- `document.createElement()` untuk membuat elemen baru.
+- `textContent` untuk mengisi teks.
+- `append()` untuk memasukkan elemen ke dalam wadah.
+- `daftar.textContent = ""` untuk mengosongkan wadah sebelum menampilkan data baru.
+
+Dengan cara ini, daftar proyek dapat ditampilkan secara dinamis tanpa menuliskan setiap kartu secara langsung di HTML.
+
+### D. Event dan Event Delegation
+
+Saya menerapkan event delegation dengan memasang satu `addEventListener("click", ...)` pada elemen induk `#filter`. Saya menggunakan `event.target.closest("button")` untuk mengetahui tombol yang ditekan dan `dataset.kategori` untuk membaca kategori filter.
+
+Fitur filter memungkinkan pengguna menampilkan seluruh proyek, proyek kategori Web, atau proyek kategori Aplikasi. Saya juga menggunakan `classList.toggle()` untuk menandai tombol filter yang sedang aktif.
+
+### E. Validasi Form
+
+Saya membuat validasi pada form Tambah Game untuk memeriksa nama game, platform, tahun bermain, dan rating. Validasi dilakukan dengan memeriksa apakah kolom sudah diisi dan apakah nilai tahun serta rating berada dalam rentang yang ditentukan.
+
+Saya menggunakan `event.preventDefault()` untuk mencegah pengiriman form secara bawaan. Pesan galat ditampilkan pada kolom yang tidak valid dan dihilangkan ketika isinya sudah benar.
+
+### F. Pembagian Berkas
+
+Berkas yang digunakan dalam pengerjaan ini meliputi:
+
+- `profil.html` sebagai struktur halaman.
+- Berkas CSS untuk mengatur tampilan halaman.
+- `js/app.js` untuk menyimpan data proyek dan fungsi yang digunakan bersama.
+- `js/dom.js` untuk mengelola elemen DOM, menampilkan proyek, menangani filter, dan memvalidasi form.
+
+### G. Hasil Pembelajaran
+
+Melalui latihan ini, saya memahami bahwa JavaScript dapat digunakan untuk mengubah tampilan halaman berdasarkan data dan interaksi pengguna. Saya juga belajar bahwa penggunaan DOM yang tepat, event delegation, dan validasi form dapat membuat halaman lebih interaktif dan terstruktur.
+
+### H. Deklarasi Penggunaan AI
+
+Saya menggunakan ChatGPT sebagai alat bantu untuk memahami konsep DOM, event delegation, validasi form, dan memperbaiki kode JavaScript yang mengalami masalah. AI juga membantu memberikan penjelasan dan contoh kode serta membantu menyusun dokumentasi README.
+
+Saya tetap menjalankan dan menguji kode pada proyek saya, memeriksa hasilnya melalui browser, serta menyesuaikan kode dengan kebutuhan halaman profil dan instruksi worksheet. Pemilihan topik koleksi game, isi data proyek, dan pengujian hasil akhir dilakukan berdasarkan proyek yang saya kerjakan sendiri.
