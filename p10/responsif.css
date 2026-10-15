@@ -1,0 +1,71 @@
+/* =========================
+   RESPONSIF MOBILE-FIRST
+   ========================= */
+
+/* Dasar: layar sempit */
+
+main.isi {
+  grid-template-columns: 1fr;
+  grid-template-areas:
+    "utama"
+    "sisi";
+}
+
+.galeri {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: var(--space-4);
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+p {
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+.utama,
+.sisi,
+.kartu {
+  min-width: 0;
+}
+
+.kartu p,
+.utama p,
+.sisi p {
+  overflow-wrap: anywhere;
+}
+
+.table-wrap {
+  overflow-x: auto;
+}
+
+/* =========================
+   TABLET
+   48rem
+   ========================= */
+
+@media (min-width: 48rem) {
+  .galeri {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* =========================
+   DESKTOP
+   60rem
+   ========================= */
+
+@media (min-width: 60rem) {
+  main.isi {
+    grid-template-columns: 16rem 1fr;
+    grid-template-areas: "sisi utama";
+  }
+
+  .galeri {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
