@@ -1,0 +1,158 @@
+/* =========================
+   KARTU GAME
+   ========================= */
+
+.kartu {
+  display: grid;
+  align-content: start;
+  gap: var(--space-2);
+  min-height: 14rem;
+  min-width: 0;
+
+  background: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-md);
+  box-shadow: var(--shadow-1);
+  padding: var(--card-pad);
+}
+
+.kartu h3,
+.kartu__judul {
+  margin: 0 0 var(--space-2);
+  overflow-wrap: anywhere;
+}
+
+.kartu p {
+  margin: 0;
+  overflow-wrap: anywhere;
+}
+
+/* =========================
+   GALERI GAME
+   ========================= */
+
+.galeri {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(16rem, 100%), 1fr));
+  gap: var(--space-4);
+  min-width: 0;
+}
+
+/* =========================
+   ISI KARTU
+   ========================= */
+
+.kartu__isi {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-2);
+  min-width: 0;
+}
+
+/* =========================
+   GAMBAR KARTU
+   ========================= */
+
+.kartu img {
+  display: block;
+  width: 100%;
+  max-width: 100%;
+  height: 160px;
+  object-fit: cover;
+  border-radius: var(--radius-md);
+}
+
+/* =========================
+   FIGURE DAN CAPTION
+   ========================= */
+
+figure {
+  margin: var(--space-4) 0 0;
+  min-width: 0;
+}
+
+figure img {
+  display: block;
+  width: 100%;
+  max-width: 640px;
+  height: auto;
+  border-radius: var(--radius-md);
+}
+
+figcaption {
+  margin-top: var(--space-2);
+  font-size: var(--text-sm);
+}
+
+/* =========================
+   FORM
+   ========================= */
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-4);
+  width: 100%;
+  max-width: 40rem;
+  min-width: 0;
+}
+
+form p {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-2);
+  margin: 0;
+  min-width: 0;
+}
+
+label {
+  font-weight: 600;
+}
+
+/* =========================
+   INPUT
+   ========================= */
+
+input {
+  box-sizing: border-box;
+  width: 100%;
+  max-width: 100%;
+  min-width: 0;
+  padding: var(--space-2);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-md);
+  background: var(--color-surface);
+  color: var(--color-fg);
+  font: inherit;
+}
+
+/* =========================
+   BUTTON
+   ========================= */
+
+button {
+  padding: var(--space-2) var(--space-4);
+  border: 0;
+  border-radius: var(--radius-md);
+  background: var(--color-primary);
+  color: var(--color-surface);
+  font: inherit;
+  cursor: pointer;
+}
+
+button:hover {
+  opacity: 0.9;
+}
+
+/* =========================
+   STATE INPUT
+   ========================= */
+
+input:focus-visible {
+  outline: 3px solid var(--color-focus);
+  outline-offset: 2px;
+}
+
+input:user-invalid {
+  border: 2px solid var(--color-danger);
+}

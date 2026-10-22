@@ -1,0 +1,23 @@
+[
+  {
+    "id": 1,
+    "judul": "Koleksi Game",
+    "tahun": 2026,
+    "selesai": true,
+    "kategori": "Web"
+  },
+  {
+    "id": 2,
+    "judul": "Halaman Profil",
+    "tahun": 2026,
+    "selesai": true,
+    "kategori": "Web"
+  },
+  {
+    "id": 3,
+    "judul": "Stress Shield",
+    "tahun": 2026,
+    "selesai": false,
+    "kategori": "Aplikasi"
+  }
+]

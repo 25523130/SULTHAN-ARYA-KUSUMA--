@@ -1,0 +1,190 @@
+<!doctype html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Koleksi Game Saya</title>
+
+    <!-- File CSS sesuai urutan worksheet -->
+    <link rel="stylesheet" href="tokens.css" />
+    <link rel="stylesheet" href="base.css" />
+    <link rel="stylesheet" href="layout.css" />
+    <link rel="stylesheet" href="komponen.css" />
+    <link rel="stylesheet" href="tema.css" />
+  </head>
+
+  <body>
+    <!-- ================= HEADER ================= -->
+    <header>
+      <div class="header-baris">
+        <!-- Tombol Tema -->
+        <div class="tema-container">
+          <input type="checkbox" id="tema" class="pengalih-tema" />
+
+          <label for="tema" class="tombol-tema"> Tema gelap </label>
+        </div>
+
+        <!-- Judul Website -->
+        <h1>Koleksi Game Saya</h1>
+
+        <!-- Navigasi -->
+        <nav aria-label="Navigasi utama">
+          <ul>
+            <li>
+              <a href="#koleksi"> Koleksi Game </a>
+            </li>
+
+            <li>
+              <a href="#tambah"> Tambah Game </a>
+            </li>
+
+            <li>
+              <a href="#tentang"> Tentang Saya </a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <!-- ================= KONTEN UTAMA ================= -->
+    <main>
+      <!-- ================= KOLEKSI GAME ================= -->
+      <section id="koleksi">
+        <h2>Koleksi Game</h2>
+
+        <div class="katalog">
+          <!-- MOBILE LEGENDS -->
+          <article class="kartu">
+            <img
+              src="MobileLegendsBangBang.jpg"
+              alt="Mobile Legends Bang Bang"
+              loading="lazy"
+            />
+
+            <h3>Mobile Legends</h3>
+
+            <p>
+              <strong>Platform:</strong>
+              HP
+            </p>
+
+            <p>
+              <strong>Tahun Bermain:</strong>
+              2022
+            </p>
+
+            <p>
+              <strong>Rating:</strong>
+              8/10
+            </p>
+          </article>
+
+          <!-- MINECRAFT -->
+          <article class="kartu">
+            <img src="minicraft.jpg" alt="Minecraft" loading="lazy" />
+
+            <h3>Minecraft</h3>
+
+            <p>
+              <strong>Platform:</strong>
+              HP
+            </p>
+
+            <p>
+              <strong>Tahun Bermain:</strong>
+              2021
+            </p>
+
+            <p>
+              <strong>Rating:</strong>
+              9/10
+            </p>
+          </article>
+
+          <!-- CLASH OF CLANS -->
+          <article class="kartu">
+            <img src="clashofclans.jpg" alt="Clash of Clans" loading="lazy" />
+
+            <h3>Clash of Clans</h3>
+
+            <p>
+              <strong>Platform:</strong>
+              HP
+            </p>
+
+            <p>
+              <strong>Tahun Bermain:</strong>
+              2023
+            </p>
+
+            <p>
+              <strong>Rating:</strong>
+              9/10
+            </p>
+          </article>
+        </div>
+      </section>
+
+      <!-- ================= FORM TAMBAH GAME ================= -->
+      <section id="tambah">
+        <h2>Tambah Game</h2>
+
+        <form action="#" method="post">
+          <!-- Nama Game -->
+          <p>
+            <label for="nama-game"> Nama Game: </label>
+
+            <input type="text" id="nama-game" name="nama-game" required />
+          </p>
+
+          <!-- Platform -->
+          <p>
+            <label for="platform"> Platform: </label>
+
+            <input type="text" id="platform" name="platform" required />
+          </p>
+
+          <!-- Tahun Bermain -->
+          <p>
+            <label for="tahun"> Tahun Bermain: </label>
+
+            <input
+              type="number"
+              id="tahun"
+              name="tahun"
+              min="2000"
+              max="2026"
+              required
+            />
+          </p>
+
+          <!-- Rating -->
+          <p>
+            <label for="rating"> Rating: </label>
+
+            <input
+              type="number"
+              id="rating"
+              name="rating"
+              min="1"
+              max="10"
+              required
+            />
+          </p>
+
+          <!-- Tombol Submit -->
+          <p>
+            <button type="submit">Tambah Game</button>
+          </p>
+        </form>
+      </section>
+    </main>
+
+    <!-- ================= FOOTER ================= -->
+    <footer id="tentang">
+      <p>Sulthan Arya Kusuma · 25523130 · 2026</p>
+    </footer>
+  </body>
+</html>
